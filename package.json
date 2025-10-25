@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@shadcn/ui": "^0.0.4",
+    "framer-motion": "^12.23.24",
+    "lucide-react": "^0.545.0",
+    "tailwindcss": "^4.1.14"
+  }
+}
