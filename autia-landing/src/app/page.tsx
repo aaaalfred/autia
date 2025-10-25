@@ -89,26 +89,37 @@ export default function AutiaLanding() {
       {/* ====== Header (glass) ====== */}
       <header className="sticky top-4 z-40 mx-auto w-full max-w-7xl px-4">
         <div
-          className="flex items-center justify-between rounded-2xl border border-white/30 bg-white/70 px-4 py-3 shadow-lg backdrop-blur-md"
+          className="flex items-center justify-between rounded-2xl border border-white/30 bg-white px-6 py-4 shadow-lg"
         >
-          <a href="#hero" className="flex items-center gap-2 font-bold">
-            <span className="h-3 w-3 rounded-full" style={{ background: "#00C896" }} />
-            <span className="text-xl tracking-tight">Autia</span>
+          <a href="#hero" className="flex items-center gap-3 font-bold transition-transform hover:scale-105">
+            <div className="rounded-2xl bg-gradient-to-br from-[#007BFF] to-[#00C896] p-[3px] shadow-lg">
+              <div className="rounded-2xl bg-white p-2.5">
+                <Image
+                  src="/images/logo.webp"
+                  alt="Autia Logo"
+                  width={48}
+                  height={48}
+                  className="h-12 w-12"
+                />
+              </div>
+            </div>
+            <span className="text-2xl tracking-tight bg-gradient-to-r from-[#007BFF] to-[#00C896] bg-clip-text text-transparent">Autia</span>
           </a>
           <nav className="hidden gap-6 md:flex">
-            <a href="#que-es" className="hover:text-[#007BFF]">¿Qué es?</a>
-            <a href="#servicios" className="hover:text-[#007BFF]">Servicios</a>
-            <a href="#casos" className="hover:text-[#007BFF]">Casos</a>
-            <a href="#beneficios" className="hover:text-[#007BFF]">Beneficios</a>
-            <a href="#contacto" className="hover:text-[#007BFF]">Contacto</a>
+            <a href="#que-es" className="font-medium transition-colors hover:text-[#007BFF]">¿Qué es?</a>
+            <a href="#servicios" className="font-medium transition-colors hover:text-[#007BFF]">Servicios</a>
+            <a href="#casos" className="font-medium transition-colors hover:text-[#007BFF]">Casos</a>
+            <a href="#beneficios" className="font-medium transition-colors hover:text-[#007BFF]">Beneficios</a>
+            <a href="#contacto" className="font-medium transition-colors hover:text-[#007BFF]">Contacto</a>
           </nav>
           <div className="flex items-center gap-2">
             <a
-              href="https://wa.me/525522586238?text=Hola%20Autia%2C%20quiero%20transformar%20mi%20negocio"
+              href="https://wa.me/5215522586238?text=Hola%2C%20estoy%20interesado%20en%20una%20consultor%C3%ADa"
               target="_blank"
               rel="noreferrer"
             >
-              <Button className="rounded-2xl" style={{ background: "#007BFF" }}>
+              <Button className="rounded-2xl font-semibold" style={{ background: "#00C896", color: "#1C1C1C" }}>
+                <MessageCircle className="mr-2 h-4 w-4" />
                 WhatsApp
               </Button>
             </a>
@@ -144,7 +155,7 @@ export default function AutiaLanding() {
               </Button>
             </a>
             <a
-              href="https://wa.me/525522586238?text=Hola%20Autia%2C%20quiero%20una%20consultor%C3%ADa"
+              href="https://wa.me/5215522586238?text=Hola%2C%20estoy%20interesado%20en%20una%20consultor%C3%ADa"
               target="_blank"
               rel="noreferrer"
             >
@@ -343,7 +354,7 @@ export default function AutiaLanding() {
                     </Button>
                   </a>
                   <a
-                    href="https://wa.me/5210000000000?text=Hola%20Autia%2C%20quiero%20agendar%20una%20consultor%C3%ADa"
+                    href="https://wa.me/5215522586238?text=Hola%2C%20estoy%20interesado%20en%20una%20consultor%C3%ADa"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -376,7 +387,15 @@ export default function AutiaLanding() {
           <div className="grid gap-6 md:grid-cols-3">
             <div>
               <div className="flex items-center gap-2">
-                <span className="h-3 w-3 rounded-full" style={{ background: "#00C896" }} />
+                <div className="rounded-lg bg-white p-2 shadow-md ring-2 ring-[#007BFF]/10">
+                  <Image
+                    src="/images/logo.webp"
+                    alt="Autia Logo"
+                    width={32}
+                    height={32}
+                    className="h-8 w-8"
+                  />
+                </div>
                 <span className="text-xl font-bold">Autia</span>
               </div>
               <p className="mt-3 max-w-sm text-neutral-600">Tecnología que se adapta a ti.</p>
@@ -393,7 +412,7 @@ export default function AutiaLanding() {
                 <li className="flex items-center gap-2">
                   <MessageCircle className="h-4 w-4" />
                   <a
-                    href="https://wa.me/5210000000000"
+                      href="https://wa.me/5215522586238?text=Hola%2C%20estoy%20interesado%20en%20una%20consultor%C3%ADa"
                     target="_blank"
                     rel="noreferrer"
                     className="underline-offset-2 hover:underline"
